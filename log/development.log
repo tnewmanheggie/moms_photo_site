@@ -277,3 +277,70 @@ These autoloaded constants have been unloaded.
 
 Please, check the "Autoloading and Reloading Constants" guide for solutions.
  (called from <main> at /Users/tessanewman/Projects/photos_for_pam/fotogallery/moms_photo_site/config/environment.rb:5)
+Started GET "/articles" for ::1 at 2020-12-25 17:47:13 -0600
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (11.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 288.5ms | Allocations: 84417)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 12.0ms | Allocations: 87963)
+
+
+  
+ActionView::Template::Error (undefined method `cl_image_tag' for #<#<Class:0x00007f8faa44d568>:0x00007f8facc0ef20>):
+    1: <!-- app/views/articles/index.html.erb -->
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <%= cl_image_tag("c2jkdelh5jlnkfbyvjla",
+    5:                  width: 400, height: 300, crop: :fill) %>
+    6: 
+    7: <!-- for face detection -->
+  
+app/views/articles/index.html.erb:4
+Started GET "/" for ::1 at 2020-12-25 17:47:20 -0600
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 159.7ms | Allocations: 81002)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.4ms | Allocations: 81464)
+
+
+  
+ActionView::Template::Error (undefined method `cl_image_tag' for #<#<Class:0x00007f8faa44d568>:0x00007f8face9c170>):
+    1: <!-- app/views/articles/index.html.erb -->
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <%= cl_image_tag("c2jkdelh5jlnkfbyvjla",
+    5:                  width: 400, height: 300, crop: :fill) %>
+    6: 
+    7: <!-- for face detection -->
+  
+app/views/articles/index.html.erb:4
+Started GET "/" for ::1 at 2020-12-25 17:47:22 -0600
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 138.1ms | Allocations: 80992)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.3ms | Allocations: 81446)
+
+
+  
+ActionView::Template::Error (undefined method `cl_image_tag' for #<#<Class:0x00007f8faa44d568>:0x00007f8fab2877c8>):
+    1: <!-- app/views/articles/index.html.erb -->
+    2: <p id="notice"><%= notice %></p>
+    3: 
+    4: <%= cl_image_tag("c2jkdelh5jlnkfbyvjla",
+    5:                  width: 400, height: 300, crop: :fill) %>
+    6: 
+    7: <!-- for face detection -->
+  
+app/views/articles/index.html.erb:4
