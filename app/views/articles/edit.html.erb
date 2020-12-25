@@ -1,6 +1,13 @@
 <h1>Editing Article</h1>
 
-<%= render 'form', article: @article %>
+<%#= render 'form', article: @article %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<!--<%#= link_to 'Show', @article %> |-->
+<%#= link_to 'Back', articles_path %>
+
+<% @article.photos.each do |photo| %>
+  <%= link_to "X", article_photo_remove_path(@article, photo),
+              :method => :delete,
+              :data => { :confirm => t('.confirm', :default => 'Are you sure you want to delete this upload?') },
+              :id =>'delete-faq', :class => 'delete' %></td>
+<% end %>

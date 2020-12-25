@@ -45,6 +45,13 @@ class ArticlesController < ApplicationController
     redirect_to articles_url, notice: 'Article was successfully destroyed.'
   end
 
+  def remove
+    @article = Article.find(params[:article_id])
+    @photo = @article.photos.find(params[:photo_id])
+    @photo.purge
+    redirect_to article_path(@article), notice: "Upload was successfully removed."
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
@@ -52,7 +59,7 @@ class ArticlesController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    def article_params
-      params.require(:article).permit(:title, :body)
-    end
+  def article_params
+    params.require(:article).permit(:title, :body, photos: [])
+  end
 end

@@ -1,4 +1,5 @@
 # README
+Basic App based on https://medium.com/@haseebchaudhary_98209/rails-building-a-photo-gallery-app-cac385c75cdc
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
